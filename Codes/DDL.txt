@@ -1,0 +1,30 @@
+
+
+create database pos location '/pos';
+
+
+create table employee (emplId int,emplNum int,storeNum string,emplName string,joiningDate string,designation string);
+
+create table store (storeId int,storNum string,city string,openDate string,closeDate string)
+row format delimited
+fields terminated by ',';
+
+create table promotion (promoId int,promoCode string,descr string,promoStartDate string,promoEndDate string)
+row format delimited
+fields terminated by ',';
+
+create table loyalty (loyalMemNum int,custNum int,cardNo string,joinDate string,points int)
+row format delimited
+fields terminated by ',';
+
+create table products (productId int,productCode string,addDt string,removeDt string)
+row format delimited
+fields terminated by ',';
+
+create table transcode (transCodeId int,transCode string,descrip string)
+row format delimited
+fields terminated by ',';
+
+create table transstrings (transC int,transCode string,descrip string)
+row format delimited
+fields terminated by ',';
